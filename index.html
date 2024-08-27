@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Tracker</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body> 
+    <!-- Main container for the entire application -->
+    <div class="container">
+        <!-- Page title -->
+        <h1>Expense Tracker</h1>
+        
+        <!-- Form for adding new expenses -->
+        <form id="expense-form">
+            <!-- Dropdown for selecting expense category -->
+            <select id="expense-category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Input for entering the amount of the expense -->
+            <input type="number" id="expense-amount" placeholder="Amount" required />
+
+            <!-- Input for entering the description of the expense -->
+            <input type="text" id="expense-name" placeholder="Description" required />
+
+            <!-- Input for entering the date of the expense -->
+            <input type="date" id="expense-date" required />
+
+            <!-- Button to submit the form and add the expense -->
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <!-- Table to display the list of expenses -->
+        <div class="expense-table">
+            <table>
+                <thead>
+                    <tr>
+                        <!-- Table headers for expense details -->
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-list">
+                    <!-- Dynamic content will be inserted here via JavaScript -->
+                </tbody>
+            </table>
+
+            <!-- Display the total amount of all expenses -->
+            <div class="total-amount">
+                <strong>Total:</strong> &#x20B9;<span id="total-amount">0</span>
+            </div>
+        </div>
+
+        <!-- Filter section to filter expenses by category -->
+        <div class="filter">
+            <label for="filter-category">Filter by Category:</label>
+            <!-- Dropdown for selecting the category to filter expenses -->
+            <select id="filter-category">
+                <option value="All">All</option>
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+/* Reset default padding, margin, and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Set global styles for the body */
+body {
+    font-family: Arial, sans-serif; /* Use Arial as the default font */
+    background-color: #000000; /* Set a black background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Limit the maximum width */
+    margin: 50px auto; /* Center the container with top and bottom margin */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #8cabb6; /* Set a background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 8px; /* Round the corners */
+}
+
+/* Header styles */
+h1 {
+    text-align: center; /* Center the header text */
+    margin-bottom: 20px; /* Add spacing below the header */
+}
+
+/* Form styles */
+form {
+    display: flex; /* Align form elements in a row */
+    gap: 10px; /* Add space between form elements */
+    margin-bottom: 20px; /* Add spacing below the form */
+}
+
+/* Input, select, and button styles inside the form */
+form input, form select, form button {
+    padding: 10px; /* Add padding inside the elements */
+    border: 1px solid #000000; /* Add a black border */
+    border-radius: 4px; /* Slightly round the corners */
+}
+
+/* Button-specific styles */
+form button {
+    background-color: #000000; /* Set a black background for the button */
+    color: white; /* Make the text color white */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Change the cursor on hover */
+}
+
+/* Button hover effect */
+form button:hover {
+    background-color: #218838; /* Change background color on hover */
+}
+
+/* Table styles for expenses */
+.expense-table table {
+    width: 100%; /* Make the table take up the full width of the container */
+    border-collapse: collapse; /* Remove space between table cells */
+    margin-bottom: 20px; /* Add spacing below the table */
+}
+
+/* Styles for table headers and cells */
+.expense-table th, .expense-table td {
+    padding: 10px; /* Add padding inside table cells */
+    border: 1px solid #ddd; /* Add a light border around cells */
+    text-align: left; /* Align text to the left */
+}
+
+/* Table header-specific styles */
+.expense-table th {
+    background-color: #f8f8f8; /* Light grey background for headers */
+    border: 1px solid #6f6f6f; /* Darker border for headers */
+}
+
+/* Total amount display styles */
+.total-amount {
+    text-align: right; /* Align the total amount text to the right */
+    font-size: 18px; /* Increase the font size */
+}
+
+/* Filter section styles */
+.filter {
+    margin-bottom: 20px; /* Add spacing below the filter */
+    text-align: right; /* Align the filter to the right */
+}
+
+/* Label styles inside the filter */
+.filter label {
+    margin-right: 10px; /* Add space between label and select box */
+}
+
+/* Select box styles inside the filter */
+.filter select {
+    padding: 10px; /* Add padding inside the select box */
+    border: 1px solid #ccc; /* Add a light border */
+    border-radius: 4px; /* Slightly round the corners */
+}
+.edit-btn, .delete-btn {
+    background-color: #000000;
+    border: none;
+    border-radius: 3px;
+    height: 1.3rem;
+    width: 3rem;
+    color: #ffffff;
+}
+.edit-btn:hover, .delete-btn:hover {
+    cursor: pointer;
+    background-color: #4e4e4e;
+}
